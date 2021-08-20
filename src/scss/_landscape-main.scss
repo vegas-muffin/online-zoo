@@ -1,0 +1,198 @@
+@media (max-width: 1399px) and (min-width: 1200px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .header {
+    &__wrapper {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+  }
+
+  .welcome {
+    &__wrapper {
+      margin-top: 10rem;
+      flex-direction: column;
+    }
+
+    &__img {
+      width: 66rem;
+      order: 1;
+    }
+
+    &__info {
+      order: 2;
+    }
+
+    &__title {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
+  }
+  .work {
+    &__wrapper {
+      margin-top: 5rem;
+      margin-left: 40rem;
+      flex-direction: column;
+      margin-bottom: 10rem;
+    }
+
+    &__img {
+      width: 66rem;
+    }
+
+    &__title {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .donation {
+    &__wrapper {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+
+    &__text {
+      width: 57.6rem;
+    }
+  }
+
+  .meet {
+    &__title {
+      margin-top: 10rem;
+      margin-bottom: 3rem;
+    }
+
+    &__items {
+      margin-top: 3rem;
+    }
+
+    &__btn {
+      margin-top: 1rem;
+    }
+  }
+
+  .pay {
+    &__block {
+      padding-top: 8rem;
+      padding-bottom: 9.6rem;
+      align-items: center;
+    }
+
+    &__image {
+      width: 55rem;
+    }
+
+    &__subtitle {
+      text-align: center;
+      max-width: 50.2rem;
+    }
+
+    &__info {
+      margin-left: 2rem;
+      width: 100%;
+      padding-top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__text {
+      max-width: none;
+      width: 100%;
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    &__btn {
+      margin-top: 10rem;
+      margin-left: 56rem;
+    }
+
+    &__btn-wrapper {
+      width: 100%;
+    }
+  }
+
+  .monkey-eats {
+    padding-bottom: 0;
+  }
+
+  .users {
+    &__main {
+      flex-direction: column;
+    }
+
+    &__text {
+      margin-top: 3rem;
+      margin-bottom: 5rem;
+    }
+
+    &__reviews {
+      justify-content: space-between;
+      margin-left: 10rem;
+    }
+
+    &__arrows-wrapper {
+      justify-content: flex-end;
+    }
+
+    &__arrows {
+      margin-top: 7rem;
+      margin-bottom: 9.7rem;
+    }
+
+    &__feedback {
+      margin-left: 10rem;
+    }
+  }
+
+  .care {
+    &__wrapper {
+      margin-top: 15rem;
+    }
+
+    &__title {
+      margin-top: 0;
+      margin-bottom: 3rem;
+    }
+
+    &__text {
+      margin-bottom: 5rem;
+    }
+
+    &__animals {
+      margin-top: 0;
+      max-width: 93rem;
+    }
+
+    &__item-main {
+      transform: none;
+      width: 93rem;
+      margin-bottom: 2rem;
+    }
+
+    &__btn-choose {
+      margin-top: 6rem;
+    }
+  }
+
+  .footer {
+    &__logos {
+      max-width: 34.4rem;
+    }
+
+    &__menu {
+      max-width: 34.7rem;
+    }
+  }
+
+  .container_off {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

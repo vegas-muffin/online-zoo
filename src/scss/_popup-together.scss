@@ -1,0 +1,597 @@
+.popupsform {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.together {
+  max-width: 116rem;
+  background: #ffffff;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-image: url(../img/popup-hands.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+  }
+
+  &__close {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    background-image: url(../assets/icons/close-icon.svg);
+    background-size: 3rem 3rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 66px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f58021;
+    max-width: 678px;
+    width: 100%;
+    margin-top: 40.7rem;
+  }
+
+  &__text {
+    margin-top: 3rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 57rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__amounts {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #00a092;
+    border-radius: 5px;
+    padding: 2.15rem 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  &__longitem {
+    max-width: 20rem;
+    width: 100%;
+    background: #00a092;
+    border-radius: 5px;
+    padding: 2.15rem 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.make-donation {
+  max-width: 92rem;
+  width: 100%;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+
+  &__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 51px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #f58021;
+    padding: 4.2rem 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  &__choose {
+    padding-top: 4rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    max-width: 68rem;
+  }
+  &__about {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    padding-top: 0;
+    padding-bottom: 1rem;
+    margin: 0;
+    border-bottom: 1px solid #a4a8ae;
+  }
+
+  &__description {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+    margin-bottom: 1rem;
+  }
+
+  &__marker {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #00a092;
+  }
+
+  &__amounts {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 80px;
+    height: 65px;
+    background: rgba(0, 160, 146, 0.5);
+    border-radius: 5px;
+    border: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: #05786e;
+    }
+  }
+
+  &__other-amount {
+    margin-top: 4rem;
+
+    &-btn {
+      width: 200px;
+      height: 65px;
+      background: rgba(0, 160, 146, 0.5);
+      border-radius: 5px;
+      border: none;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-right: 4rem;
+      cursor: pointer;
+      transition: 0.5s;
+      &:hover {
+        background-color: #05786e;
+      }
+    }
+
+    &-input {
+      width: 200px;
+      height: 65px;
+      border: 1px solid #000000;
+      box-sizing: border-box;
+      border-radius: 5px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 150%;
+      color: #000000;
+      text-align: center;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      &:focus {
+        border: 1px solid #00a092;
+        box-shadow: 0px 4px 30px rgba(0, 160, 146, 0.3);
+
+        &:invalid {
+          background: rgba(245, 128, 33, 0.2);
+          border: 1px solid #f58021;
+        }
+
+        &:valid {
+          background: #fff;
+          border: 1px solid #00a092;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  &__special {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &-btn {
+      width: 200px;
+      height: 65px;
+      background: rgba(0, 160, 146, 0.5);
+      border-radius: 5px;
+      border: none;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: #ffffff;
+      cursor: pointer;
+      transition: 0.5s;
+      &:hover {
+        background-color: #05786e;
+      }
+    }
+
+    &-select {
+      width: 440px;
+      height: 65px;
+      border: 1px solid #000000;
+      box-sizing: border-box;
+      border-radius: 5px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 150%;
+      color: #a4a8ae;
+      cursor: pointer;
+      text-align-last: center;
+    }
+
+    &-option {
+      cursor: pointer;
+
+      &:hover {
+        background: #80cfc8;
+      }
+    }
+  }
+
+  &__gift {
+    margin-top: 4rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+  }
+
+  &__controllers {
+    margin-top: 5rem;
+    max-width: 57.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__pagination {
+    width: 5rem;
+    height: 7.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__dot {
+    width: 1rem;
+    height: 1rem;
+    top: 0px;
+    background: #ffffff;
+    border: 1px solid #00a092;
+    box-sizing: border-box;
+    border-radius: 50%;
+  }
+
+  &__dot_active {
+    background: #00a092;
+  }
+
+  &__next-btn {
+    width: 200px;
+    height: 74px;
+    background: #00a092;
+    border-radius: 5px;
+    border: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 5.8rem;
+    cursor: pointer;
+    background-image: url(../assets/icons/meet-right-white.svg);
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: #05786e;
+    }
+  }
+
+  &__back-btn {
+    width: 200px;
+    height: 74px;
+    border-radius: 5px;
+    border: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 170%;
+    text-transform: capitalize;
+    background-color: #fff;
+    color: #00a092;
+    text-align: left;
+    text-decoration-line: underline;
+    padding-left: 5.8rem;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: #05786e;
+      color: #fff;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__marker {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: #00a092;
+  }
+
+  &__label {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: #000;
+    margin-bottom: 1rem;
+
+    &-email {
+      margin-top: 5rem;
+    }
+  }
+
+  &__input {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: #969696;
+    padding: 17px 20px 16px;
+    outline: none;
+
+    &:focus {
+      border: 1px solid #00a092;
+      box-shadow: 0px 4px 30px rgba(0, 160, 146, 0.3);
+
+      &:invalid {
+        background: rgba(245, 128, 33, 0.2);
+        border: 1px solid #f58021;
+      }
+
+      &:valid {
+        background: #fff;
+        border: 1px solid #00a092;
+        color: #000;
+      }
+    }
+  }
+
+  &__about-email {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 1rem;
+  }
+
+  &__credit-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__creditcard {
+    max-width: 44.2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__number {
+    max-width: 19.8rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    &-creditcard {
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+
+    &-number {
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  }
+
+  &__expdate {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__date {
+    padding-bottom: 5rem;
+  }
+
+  &__month {
+    &-select {
+      width: 20rem;
+      height: 65px;
+      border: 1px solid #000000;
+      box-sizing: border-box;
+      border-radius: 5px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 150%;
+      color: #a4a8ae;
+      cursor: pointer;
+      text-align-last: center;
+    }
+  }
+
+  &__year {
+    &-select {
+      width: 20rem;
+      height: 65px;
+      border: 1px solid #000000;
+      box-sizing: border-box;
+      border-radius: 5px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 150%;
+      color: #a4a8ae;
+      cursor: pointer;
+      text-align-last: center;
+      margin-left: 4rem;
+    }
+  }
+
+  &__controllers-finish {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__complete-btn {
+    width: 359px;
+    height: 74px;
+    background: #f58021;
+    border-radius: 5px;
+    border: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 5.6rem;
+    cursor: pointer;
+    background-image: url(../assets/icons/meet-right-white.svg);
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
+    transition: 0.5s;
+    &:hover {
+      background-color: $orange-hover;
+    }
+  }
+}

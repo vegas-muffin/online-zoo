@@ -1,0 +1,192 @@
+@media (max-width: 1199px) and (min-width: 640px) {
+  .sidebar {
+    z-index: 9;
+    width: 7.8rem;
+    
+    &__wrapper {
+      width: 7.8rem;
+    }
+
+    &__live {
+      display: none;
+    }
+
+    &__border {
+      width: 100%;
+      height: 100%;
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    &__circle {
+      background-color: $navy;
+      width: 100%;
+      height: 100%;
+      border-radius: none;
+    }
+
+    &__circle_panda {
+      background-image: url(../assets/icons/panda-icon-orange.svg);
+      background-size: 4rem 3rem;
+    }
+
+    &__circle_eagles {
+      background-image: url(../assets/icons/eagle-icon-orange.svg);
+      background-size: 4rem 3rem;
+    }
+
+    &__circle_gorilla {
+      background-image: url(../assets/icons/gorilla-icon-orange.svg);
+      background-size: 4rem 3rem;
+    }
+
+    &__circle_lemur {
+      background-image: url(../assets/icons/lemur-icon-orange.svg);
+      background-size: 4rem 3rem;
+    }
+
+    &__upbtn {
+      background-position: center;
+      height: 5rem;
+    }
+
+    &__downbtn {
+      height: 5rem;
+    }
+
+    &__item {
+      height: 10rem;
+    }
+  }
+
+  .animal {
+    &__wrapper {
+      padding-top: 2.6rem;
+      padding-bottom: 8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    &__item {
+      &-title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10.218px;
+        line-height: 150%;
+        background-size: 11.35px 11.35px;
+        padding: 3px 28px 3px 10px;
+      }
+    }
+
+    &__title {
+      margin-left: 5.8rem;
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 51px;
+      &-wrapper {
+        padding-bottom: 2.6rem;
+        order: 1;
+      }
+    }
+
+    &__btn {
+      position: relative;
+      order: 3;
+      margin-top: 2rem;
+      padding-left: 2rem;
+      width: 21.2rem;
+      height: 4.8rem;
+      &-right {
+        display: none;
+      }
+
+      &-left {
+        display: none;
+      }
+    }
+
+    &__camera {
+      order: 2;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    &__camera-frame {
+      // width: 100vw;
+      max-width: 54.2rem;
+      width: 100vw;
+      max-height: 40.2rem;
+      height: 100vh;
+    }
+
+    &__views {
+      margin-top: 2rem;
+      order: 4;
+
+      &-title {
+        text-transform: none;
+        text-align: left;
+      }
+    }
+
+    &__cameras {
+      max-width: 44.5rem;
+      width: 100vw;
+    }
+
+    &__frame {
+      max-width: 13.5rem;
+      max-height: 10.6rem;
+    }
+  }
+
+  .donation {
+    &__text-zoos {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+  }
+
+  .profile {
+    &__wrapper {
+      padding-top: 8rem;
+      padding-bottom: 10rem;
+    }
+
+    &__question {
+      margin-top: 2.6rem;
+      margin-bottom: 3rem;
+    }
+
+    &__answer {
+      max-width: 54rem;
+    }
+
+    &__info {
+      padding-top: 8rem;
+    }
+
+    &__block {
+      flex-direction: column;
+    }
+
+    &__description {
+      order: 2;
+      margin-top: 8rem;
+    }
+
+    &__photo {
+      order: 1;
+      max-width: 60rem;
+      min-width: 44rem;
+      max-height: 60rem;
+      min-height: 44rem;
+      width: 100vw;
+      height: 100vw;
+    }
+  }
+}

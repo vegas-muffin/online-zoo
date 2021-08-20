@@ -1,0 +1,130 @@
+@media (max-width: 1399px) and (min-width: 1200px) {
+  .sidebar {
+    &__wrapper {
+      z-index: 99;
+      width: 11.5rem;
+    }
+
+    &__upbtn {
+      background-position: center;
+    }
+
+    &__border {
+      width: auto;
+      height: auto;
+      box-shadow: none;
+    }
+
+    &__circle {
+      // width: auto;
+      // height: auto;
+      background-color: $navy;
+    }
+
+    &__camera-frame {
+      // width: 100vw;
+      max-width: 140rem;
+      width: 100vw;
+      max-height: 78.7rem;
+      height: 100vh;
+    }
+
+    &__circle_panda {
+      background-image: url(../assets/icons/panda-icon-orange.svg);
+    }
+
+    &__circle_eagles {
+      background-image: url(../assets/icons/eagle-icon-orange.svg);
+    }
+
+    &__circle_gorilla {
+      background-image: url(../assets/icons/gorilla-icon-orange.svg);
+    }
+
+    &__circle_lemur {
+      background-image: url(../assets/icons/lemur-icon-orange.svg);
+    }
+
+    &__live {
+      display: none;
+    }
+  }
+
+  .animal {
+    &__wrapper {
+      padding-top: 3rem;
+      margin-left: 9.5rem;
+      padding-bottom: 10rem;
+    }
+
+    &__title {
+      padding-left: 19rem;
+      text-align: left;
+    }
+
+    &__title-wrapper {
+      padding-bottom: 3rem;
+    }
+
+    &__camera-frame {
+      width: 102.5rem;
+      height: 76rem;
+    }
+
+    &__btn {
+      margin-top: 3.5rem;
+      width: 24rem;
+      height: 5.6rem;
+    }
+
+    &__views {
+      margin-top: 1rem;
+    }
+
+    &__carousel {
+      max-width: 98.5rem;
+    }
+
+    &__frame {
+      width: 26.5rem;
+      height: 20.9rem;
+    }
+  }
+
+  .donation {
+    &__wrapper {
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    &__text-zoos {
+      max-width: 73.9rem;
+    }
+  }
+
+  .profile {
+    &__wrapper {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+    }
+
+    &__youknow-inner {
+      max-width: 93rem;
+    }
+
+    &__question {
+      margin-top: 3rem;
+    }
+
+    &__answer {
+      max-width: 64rem;
+      margin-bottom: 3rem;
+    }
+
+    &__info {
+      padding-top: 10rem;
+    }
+  }
+}

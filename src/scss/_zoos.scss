@@ -85,6 +85,10 @@
     background-color: #fff;
     background-repeat: no-repeat;
     background-position: center;
+    transition: all 0.3s ease-in;
+    &:hover {
+      background-color: #f58021;
+    }
   }
 
   &__circle_panda {

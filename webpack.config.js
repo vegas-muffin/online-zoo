@@ -1,5 +1,8 @@
+const webpack = require("webpack");
+// const $ = require("jquery");
 const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackExternalsPlugin = require("html-webpack-externals-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
@@ -38,6 +41,26 @@ const plugins = () => {
       minify: {
         collapseWhitespace: isProd,
       },
+    }),
+    new HtmlWebpackExternalsPlugin({
+      externals: [
+        {
+          module: "jquery",
+          entry:
+            "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js",
+          global: "jQuery",
+        },
+        {
+          module: "slick",
+          entry: "https://code.jquery.com/jquery-1.11.0.min.js",
+          global: "Slick",
+        },
+        {
+          module: "slickMigrate",
+          entry: "https://code.jquery.com/jquery-migrate-1.2.1.min.js",
+          global: "SlickMigrate",
+        },
+      ],
     }),
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, "src/map.html"),
@@ -78,6 +101,16 @@ const plugins = () => {
           to: path.resolve(__dirname, "app/assets"),
         },
       ],
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.$": "jquery",
+      "window.jQuery": "jquery",
+      "window.Slick": "slick",
+      Slick: "slick",
+      "window.SlickMigrate": "slickMigrate",
+      Slick: "slickMigrate",
     }),
   ];
 
@@ -128,6 +161,11 @@ module.exports = {
     port: 3000,
   },
   optimization: optimization(),
+  externals: {
+    jquery: "jQuery",
+    slick: "slick",
+    slickMigrate: "slickMigrate",
+  },
   plugins: plugins(),
   devtool: isProd ? false : "source-map",
   module: {
